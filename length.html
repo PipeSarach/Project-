@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 160px;
+  cursor: pointer;
+}
+.button1 {background-color: red;} /* Green */
+.button2 {background-color: yellow;} /* Blue */
+.button3 {background-color: green;} /* Blue */
+</style>
+    <meta charset="UTF-8"
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:lightskyblue;">
+  <a href="index.html"><h1 style="color: darkblue;">โปรแกรมแปลงหน่วย</h1></a>
+  <div style="border:15px solid darkblue; background-color: darkblue;">
+    <a = href="temperature.html"><button class="button button1" style="border-radius: 12px;">อุณหภูมิ</button></a>
+    <a = href="force.html"><button class="button button2" style="border-radius: 12px;">แรง</button></a>
+    <a = href="length.html"><button class="button button3" style="border-radius: 12px;">ความยาว</button></a>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 col-xs-12" style="margin-left: 500px; margin-top: 50px;">
+      <div class="conversion-calculator-parameter">
+          <h2 style="margin:0"><label for="length-nano" class="conversion-calc-labels" title="กิโลเมตร">กิโลเมตร</label></h2>
+          <input type="number" id="km" oninput="Kilometre()" step="0.01" style="height: 30px;">
+          <span class="conversion-calc-symbols">(km)</span>
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12" style="margin-left: 800px; margin-top: -65px;">
+      <div class="conversion-calculator-parameter">
+          <h2 style="margin:0"><label for="length-inch" class="conversion-calc-labels" title="เมตร">เมตร</label></h2>
+          <input type="number" id="m" oninput="Metre()" step="0.01" style="height: 30px;">
+          <span class="conversion-calc-symbols">(m)</span>
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12" style="margin-left: 500px;">
+      <div class="conversion-calculator-parameter">
+          <h2 style="margin:0"><label for="length-inch" class="conversion-calc-labels" title="ฟุต">ฟุต</label></h2>
+          <input type="number" id="ft" oninput="Foot()" step="0.01" style="height: 30px;">
+          <span class="conversion-calc-symbols">(ft)</span>
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12" style="margin-left: 800px; margin-top: -65px;">
+      <div class="conversion-calculator-parameter">
+          <h2 style="margin:0"><label for="length-inch" class="conversion-calc-labels" title="นิ้ว">นิ้ว</label></h2>
+          <input type="number" id="ic" oninput="Inch()" step="0.01" style="height: 30px;">
+          <span class="conversion-calc-symbols">(in)</span>
+      </div>
+    </div><div class="col-sm-4 col-xs-12" style="margin-left: 500px;">
+      <div class="conversion-calculator-parameter">
+          <h2 style="margin:0"><label for="length-inch" class="conversion-calc-labels" title="เซนติเมตร">เซนติเมตร</label></h2>
+          <input type="number" id="cm" oninput="Centimetre()" step="0.01" style="height: 30px;">
+          <span class="conversion-calc-symbols">(cm)</span>
+      </div>
+    </div>
+    </div><div class="col-sm-4 col-xs-12" style="margin-left: 800px; margin-top: -65px;">
+      <div class="conversion-calculator-parameter">
+        <h2 style="margin:0"><label for="length-inch" class="conversion-calc-labels" title="ปอนด์">มิลลิเมตร</label></h2>
+        <input type="number" id="mm" oninput="Millimetre()" step="0.01" style="height: 30px;">
+        <span class="conversion-calc-symbols">(mm)</span>
+      </div>
+    </div>
+  </div>
+    <script src="app.js"></script>
+</body>
